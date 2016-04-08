@@ -15,10 +15,11 @@ class Classes
     public function getMajorId()
     {
         return $this->majorId;
-    }  
+    } 
     public static function addClass($majorId,$name)
     {
         
     }
+
     
 }
