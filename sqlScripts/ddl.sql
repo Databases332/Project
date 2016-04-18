@@ -20,7 +20,7 @@ CREATE TABLE Student
 CREATE TABLE Class
 (
 	PreRequisite VARCHAR(8),
-	MajorId INTEGER NOT NULL,
+	MajorId INTEGER,
 	Name VARCHAR(8) NOT NULL,
 	PRIMARY KEY(Name),
 	FOREIGN KEY (MajorId) REFERENCES Major(MajorId) 

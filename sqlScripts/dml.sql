@@ -331,7 +331,7 @@ INSERT INTO GradeReport (SessionId, StudentId)
 VALUES (44, 1); 
 
 -- Student 2 
-INSERT INTO Student (Name, MajorId, StudentI)
+INSERT INTO Student (Name, MajorId, StudentId)
 VALUES ('Sarah Jane', 2, 2); 
 
 -- Grades
