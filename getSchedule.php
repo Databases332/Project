@@ -13,7 +13,7 @@
 </head>
 <?php 
     include 'classes/Student.php';
-    $schedules = Student::getSchedules($_POST["studentId"]);
+    $schedules = $student->getSchedules($_POST["studentId"]);
 ?>
 <div id="scheduleWindow">
     <h2>Generated Schedules</h2>
