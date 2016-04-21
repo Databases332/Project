@@ -15,6 +15,7 @@
     include 'classes/Student.php';
     $student = new Student($_POST["studentId"]);
     $schedules = $student->getSchedules();
+    echo $schedules
 ?>
 <div id="scheduleWindow">
     <h2>Generated Schedules</h2>
