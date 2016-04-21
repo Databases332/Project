@@ -83,7 +83,6 @@ class Student
             #print_r($row);    
             $className = $row[0];
             $time = $row[1];
-            echo $className;
             switch($time)
             {
                 case 1:
@@ -117,7 +116,6 @@ class Student
                 $time6
             )
         );
-        print_r($schedules);
         return shuffle($schedules);
     }
     public static function addStudent($firstName,$lastName,$major)

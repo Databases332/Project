@@ -15,19 +15,18 @@
     include 'classes/Student.php';
     $student = new Student($_POST["studentId"]);
     $schedules = $student->getSchedules();
-    #print_r($schedules);
 ?>
 <div id="scheduleWindow">
     <h2>Generated Schedules</h2>
     <table>
         <thead>
             <tr>
-                <th>8am-9am</th>
-                <th>9am-10am</th>
-                <th>10am-11am</th>
-                <th>11am-12am</th>
-                <th>1pm-2pm</th>
-                <th>2pm-3pm</th>
+                <th>8am</th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+                <th>1pm</th>
+                <th>2pm</th>
             </tr>
         </thead>
         <tbody>
@@ -68,7 +67,7 @@
 </div>
 
 <script type="text/javascript">
-   $("table").kendoGrid(); 
+   //$("table").kendoGrid(); 
 </script>
 </body>
 </html>
