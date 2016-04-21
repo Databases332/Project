@@ -1,4 +1,8 @@
 echo "ddl"
-mysql -u root -p < ddl.sql;
+mysql -u b60915d3fb3af8 -h "us-cdbr-iron-east-03.cleardb.net" -p < ddl.sql;
+#mysql -u root -p < ddl.sql;
 echo "dml"
-mysql -u root -p < dml.sql;
+mysql -u b60915d3fb3af8 -h "us-cdbr-iron-east-03.cleardb.net" -p < dml.sql;
+echo "procs"
+mysql -u b60915d3fb3af8 -h "us-cdbr-iron-east-03.cleardb.net" -p < procs.sql;
+#mysql -u root -p < dml.sql;
