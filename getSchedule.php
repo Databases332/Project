@@ -13,9 +13,7 @@
 </head>
 <?php 
     include 'classes/Student.php';
-    $student = new Student($_POST["studentId"]);
-    $schedules = $student->getSchedules();
-    echo $schedules
+    $schedules = $student->getSchedules($_POST["studentId"]);
 ?>
 <div id="scheduleWindow">
     <h2>Generated Schedules</h2>
@@ -68,7 +66,7 @@
 </div>
 
 <script type="text/javascript">
-   //$("table").kendoGrid(); 
+   $("table").kendoGrid(); 
 </script>
 </body>
 </html>
