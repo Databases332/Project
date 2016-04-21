@@ -22,12 +22,12 @@
     <table>
         <thead>
             <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-                <th>6</th>
+                <th>8am-9am</th>
+                <th>9am-10am</th>
+                <th>10am-11am</th>
+                <th>11am-12am</th>
+                <th>1pm-2pm</th>
+                <th>2pm-3pm</th>
             </tr>
         </thead>
         <tbody>

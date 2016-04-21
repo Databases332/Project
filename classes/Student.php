@@ -80,7 +80,7 @@ class Student
         $time6 = [];
         while($row = mysqli_fetch_array($result))
         {
-            print_r($row);    
+            #print_r($row);    
             $className = $row[0];
             $time = $row[1];
             echo $className;
@@ -117,7 +117,7 @@ class Student
                 $time6
             )
         );
-        return $schedules;
+        return shuffle($schedules);
     }
     public static function addStudent($firstName,$lastName,$major)
     {
