@@ -20,7 +20,7 @@ class Student
             return $arrays[$i];
         }
 
-        $tmp = $this->combinations($arrays, $i + 1);
+        $tmp = Student::combinations($arrays, $i + 1);
 
         $result = array();
 
@@ -90,7 +90,7 @@ class Student
             }
             array_push($classSessions, $classSession);
         }
-        $schedules = $this->combinations (
+        $schedules = Student::combinations (
             array(
                 $time1,
                 $time2,
