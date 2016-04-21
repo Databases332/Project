@@ -1,4 +1,4 @@
-USE scheduler;
+USE heroku_9aece095e067a9a;
 
 INSERT INTO Major (Name, MajorId)
 VALUES ('Computer Science', 1); 
