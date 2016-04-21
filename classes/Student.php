@@ -61,17 +61,8 @@ class Student
         $password = $url["pass"];
         $db = substr($url["path"], 1);
         $conn = new mysqli($server, $username, $password, $db);
-        #$connection = mysqli_connect("root", "password", "Scheduler", "20");
         $result = $conn->query("SELECT ClassName, Time FROM ClassSession INNER JOIN Class ON ClassSession.ClassName = Class.Name INNER JOIN Student ON Student.StudentId = " . $studentId . " WHERE ClassSession.ClassName NOT IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId WHERE GradeReport.StudentId = " . $studentId . "  ) AND ( Student.MajorId = Class.MajorId OR Class.MajorId IS NULL  ) AND ( Class.PreRequisite IS NULL OR Class.PreRequisite IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId inner join Student ON Student.StudentId = " . $studentId . " inner join Class ON (Class.Name = ClassSession.ClassName) WHERE GradeReport.StudentId = Student.StudentId )  ) ORDER BY Time ASC;");
         $classSessions = [];
-        print_r($result);
-        #temp variables
-        #$time1 = [39,45,33];
-        #$time2 = [40,46,26,34];
-        #$time3 = [41,47,27,35];
-        #$time4 = [42,48,28];
-        #$time5 = [37,29];
-        #$time6 = [38,30];
 
         $time1 = [];
         $time2 = [];
@@ -81,7 +72,6 @@ class Student
         $time6 = [];
         while($row = mysqli_fetch_array($result))
         {
-            #print_r($row);    
             $className = $row[0];
             $time = $row[1];
             switch($time)

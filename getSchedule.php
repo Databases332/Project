@@ -68,7 +68,7 @@
 </div>
 
 <script type="text/javascript">
-   //$("table").kendoGrid(); 
+   $("table").kendoGrid(); 
 </script>
 </body>
 </html>
