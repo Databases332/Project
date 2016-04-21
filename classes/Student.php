@@ -54,16 +54,11 @@ class Student
     }
     public function getSchedules()
     {
-        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-        $server = $url["host"];
-        $username = $url["user"];
-        $password = $url["pass"];
-        $db = substr($url["path"], 1);
-        $conn = new mysqli($server, $username, $password, $db);
         #$connection = mysqli_connect("root", "password", "Scheduler", "20");
-        $result = $conn->query("SELECT ClassName, Time FROM ClassSession INNER JOIN Class ON ClassSession.ClassName = Class.Name INNER JOIN Student ON Student.StudentId = 1 WHERE ClassSession.ClassName NOT IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId WHERE GradeReport.StudentId = 1  ) AND ( Student.MajorId = Class.MajorId OR Class.MajorId IS NULL  ) AND ( Class.PreRequisite IS NULL OR Class.PreRequisite IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId inner join Student ON Student.StudentId = 1 inner join Class ON (Class.Name = ClassSession.ClassName) WHERE GradeReport.StudentId = Student.StudentId )  ) ORDER BY Time ASC;");
+
+        #$result = mysqli_query($connection, "CALL getAvailableClasses");
         $classSessions = [];
+
         #temp variables
         $time1 = [39,45,33];
         $time2 = [40,46,26,34];
@@ -72,9 +67,8 @@ class Student
         $time5 = [37,29];
         $time6 = [38,30];
 
-        while($row = mysqli_fetch_array($result))
-        {
-            print_r($row);    
+        #while($row = mysqli_fetch_array($result))
+        #{
         #    $classSessionId = $row[0];
         #    $classSession = new Session($classSessionId);
         #    switch($classSession->{$Time})
@@ -99,7 +93,7 @@ class Student
         #            break;
         #    }
         #    array_push($classSessions, $classSession);
-        }
+        #}
         $schedules = $this->combinations (
             array(
                 $time1,
