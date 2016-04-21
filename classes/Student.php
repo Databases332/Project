@@ -122,8 +122,7 @@ class Student
                 $time6
             )
         );
-        shuffle($schedules);
-        return $schedules;
+        return shuffle($schedules);
     }
     public static function addStudent($firstName,$lastName,$major)
     {
