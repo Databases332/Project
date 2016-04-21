@@ -1,4 +1,4 @@
-USE scheduler;
+USE heroku_9aece095e067a9a;
 
 DROP TABLE IF EXISTS GradeReport,ClassSession,Class,Student,Major;
 CREATE TABLE Major
