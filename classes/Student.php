@@ -82,7 +82,9 @@ class Student
         {
             print_r($row);    
             $className = $row[0];
-            switch($className->{$Time})
+            $time = $row[1];
+            echo $className;
+            switch($time)
             {
                 case 1:
                     array_push($time1, $className);
