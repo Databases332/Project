@@ -14,7 +14,7 @@
 <?php 
     include 'classes/Student.php';
     $student = new Student($_POST["studentId"]);
-    $schedules = $student->getSchedules();
+    $schedules = $student->getSchedules($_POST["studentId"]);
     echo $schedules
 ?>
 <div id="scheduleWindow">
