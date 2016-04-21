@@ -9,7 +9,23 @@ class Student
     
     function __construct($studentId) {
     }
-    private static function combinations ($arrays, $i = 0)
+    public function majorClassesRequired()
+    {
+        return $this->majorClasses;
+    } 
+    public function majorClassesTaken()
+    {
+        return $this->classesTaken;
+    }
+    public function getMajor()
+    {
+        return $this->major;
+    } 
+    public function getName()
+    {
+        return $this->fullName;
+    }
+    private function combinations ($arrays, $i = 0)
     {
         if(!isset($arrays[$i]))
         {
@@ -36,7 +52,7 @@ class Student
 
         return $result;
     }
-    public static function getSchedules($StudentId)
+    public function getSchedules()
     {
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
@@ -46,9 +62,13 @@ class Student
         $db = substr($url["path"], 1);
         $conn = new mysqli($server, $username, $password, $db);
         #$connection = mysqli_connect("root", "password", "Scheduler", "20");
+<<<<<<< HEAD
         $result = $conn->query("SELECT ClassName, Time FROM ClassSession INNER JOIN Class ON ClassSession.ClassName = Class.Name INNER JOIN Student ON Student.StudentId = " + $StudentId + " WHERE ClassSession.ClassName NOT IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId WHERE GradeReport.StudentId = " + $StudentId + "  ) AND ( Student.MajorId = Class.MajorId OR Class.MajorId IS NULL  ) AND ( Class.PreRequisite IS NULL OR Class.PreRequisite IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId inner join Student ON Student.StudentId = " + $StudentId + " inner join Class ON (Class.Name = ClassSession.ClassName) WHERE GradeReport.StudentId = Student.StudentId )  ) ORDER BY Time ASC;");
         echo $result;
         print_r($result);
+=======
+        $result = $conn->query("SELECT ClassName, Time FROM ClassSession INNER JOIN Class ON ClassSession.ClassName = Class.Name INNER JOIN Student ON Student.StudentId = 1 WHERE ClassSession.ClassName NOT IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId WHERE GradeReport.StudentId = 1  ) AND ( Student.MajorId = Class.MajorId OR Class.MajorId IS NULL  ) AND ( Class.PreRequisite IS NULL OR Class.PreRequisite IN ( SELECT ClassSession.ClassName FROM ClassSession inner join GradeReport ON ClassSession.SessionId = GradeReport.SessionId inner join Student ON Student.StudentId = 1 inner join Class ON (Class.Name = ClassSession.ClassName) WHERE GradeReport.StudentId = Student.StudentId )  ) ORDER BY Time ASC;");
+>>>>>>> parent of be0be4e... add real reference to student Id
         $classSessions = [];
         #temp variables
         #$time1 = [39,45,33];
@@ -105,4 +125,9 @@ class Student
         shuffle($schedules);
         return $schedules;
     }
+    public static function addStudent($firstName,$lastName,$major)
+    {
+        
+    }
+    
 }
