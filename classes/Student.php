@@ -54,7 +54,7 @@ class Student
     public function getSchedules()
     {
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $studentId = $this->$studentId;
+        $studentId = $this->studentId;
         $server = $url["host"];
         $username = $url["user"];
         $password = $url["pass"];
