@@ -8,7 +8,7 @@ class Student
     public $studentId;
     
     function __construct($studentId) {
-        $this->$studentId = $studentId;
+        $this->studentId = $studentId;
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
         $server = $url["host"];
         $username = $url["user"];
@@ -19,9 +19,9 @@ class Student
 
         $row = mysqli_fetch_array($result);
 
-        $this->$fullName = $row[0];
-        $this->$major = $row[1];
-        $this->$classesTaken = $row[2];
+        $this->fullName = $row[0];
+        $this->major = $row[1];
+        $this->classesTaken = $row[2];
         
     }
     private function combinations ($arrays, $i = 0)
