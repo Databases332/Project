@@ -18,7 +18,7 @@
 ?>
 <div id="scheduleWindow">
 <h2>Generated Schedules for <?php echo $student->fullName ?></h2>
-    <div><em>Major: </em><?php ?></div>
+    <div><em>Major: </em><?php echo $student->major?></div>
     <div><em>Number of Classes Completed: </em><?php echo $student->classesTaken ?></div>
     <table>
         <thead>
