@@ -14,10 +14,12 @@
 <?php 
     include 'classes/Student.php';
     $student = new Student($_POST["studentId"]);
-    $schedules = $student->getSchedules($_POST["studentId"]);
+    $schedules = $student->getSchedules();
 ?>
 <div id="scheduleWindow">
-    <h2>Generated Schedules</h2>
+<h2>Generated Schedules for <?php echo $student->fullName ?></h2>
+    <div><em>Major: </em><?php ?></div>
+    <div><em>Number of Classes Completed: </em><?php echo $student->classesTaken ?></div>
     <table>
         <thead>
             <tr>

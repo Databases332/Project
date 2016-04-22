@@ -373,3 +373,347 @@ INSERT INTO GradeReport (SessionId, StudentId)
 VALUES (25, 2); 
 
 
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 3); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 3); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 3); 
+
+
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 4); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 4); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 4); 
+
+
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 5); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 5); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 5); 
+
+
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 6); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 6); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 6); 
+
+
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 7); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 7); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 7); 
+
+
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 8); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 8); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 8); 
+
+
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 9); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 9); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 9); 
+
+
+-- Student 2 
+INSERT INTO Student (Name, MajorId, StudentId)
+VALUES ('Sarah Jane', 2, 10); 
+
+-- Grades
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (17, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (18, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (19, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (36, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (43, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (44, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (20, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (21, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (22, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (23, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (24, 10); 
+
+INSERT INTO GradeReport (SessionId, StudentId)
+VALUES (25, 10); 
+
+

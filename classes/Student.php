@@ -2,28 +2,27 @@
  
 class Student
 {
-    private $major;
-    private $majorClasses;
-    private $classesTaken;
-    private $fullName;
+    public $major;
+    public $classesTaken;
+    public $fullName;
+    public $studentId;
     
     function __construct($studentId) {
-    }
-    public function majorClassesRequired()
-    {
-        return $this->majorClasses;
-    } 
-    public function majorClassesTaken()
-    {
-        return $this->classesTaken;
-    }
-    public function getMajor()
-    {
-        return $this->major;
-    } 
-    public function getName()
-    {
-        return $this->fullName;
+        $this->$studentId = $studentId;
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+        $db = substr($url["path"], 1);
+        $conn = new mysqli($server, $username, $password, $db);
+        $result = $conn->query("SELECT Student.Name, Major.Name, COUNT(GradeReport.StudentId) AS 'ClassesTaken' FROM Student INNER JOIN GradeReport ON GradeReport.StudentId = Student.StudentId INNER JOIN Major ON Major.MajorId = Student.MajorId WHERE Student.StudentId = " . $studentId . " GROUP BY GradeReport.StudentId;"  );
+
+        $row = mysqli_fetch_array($result);
+
+        $this->$fullName = $row[0];
+        $this->$major = $row[1];
+        $this->$classesTaken = $row[2];
+        
     }
     private function combinations ($arrays, $i = 0)
     {
@@ -52,10 +51,10 @@ class Student
 
         return $result;
     }
-    public function getSchedules($studentId)
+    public function getSchedules()
     {
         $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
+        $studentId = $this->$studentId;
         $server = $url["host"];
         $username = $url["user"];
         $password = $url["pass"];
