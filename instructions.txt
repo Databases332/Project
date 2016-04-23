@@ -1,0 +1,2 @@
+In order to test, proceed to studentcheduler.herokuapp.com, you will see a screen with one input labeled "Please enter your Student ID:" enter an ID between 1 and 10 to view the schedule list for that student. 
+The program will return every possible full scheduler for that student based on the classes they have already taken as well as their major.
