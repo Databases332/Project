@@ -15,7 +15,7 @@ class Student
         $password = $url["pass"];
         $db = substr($url["path"], 1);
         $conn = new mysqli($server, $username, $password, $db);
-        $result = $conn->query("SELECT * FROM StudentDescription WHERE Student.StudentId = " . $studentId );
+        $result = $conn->query("SELECT * FROM StudentDescription WHERE StudentId = " . $studentId );
 
         $row = mysqli_fetch_array($result);
 
