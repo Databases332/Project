@@ -1,6 +1,7 @@
 USE heroku_9aece095e067a9a;
 
 DROP TABLE IF EXISTS GradeReport,ClassSession,Class,Student,Major;
+DROP VIEW StudentDescription;
 CREATE TABLE Major
 (
 	MajorId INTEGER NOT NULL,
@@ -42,3 +43,12 @@ CREATE TABLE GradeReport
 	Pass BIT NOT NULL
 );
 
+CREATE VIEW StudentDescription AS 
+    SELECT Student.Name
+        , Major.Name as MajorName
+        , COUNT(GradeReport.StudentId) AS 'ClassesTaken'
+        , Student.StudentId 
+    FROM Student 
+        INNER JOIN GradeReport ON GradeReport.StudentId = Student.StudentId 
+        INNER JOIN Major ON Major.MajorId = Student.MajorId 
+    GROUP BY GradeReport.StudentId;
